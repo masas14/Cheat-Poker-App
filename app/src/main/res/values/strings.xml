@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CheatPoker</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="UserName">Username</string>
+    <string name="register_user">Register User</string>
+    <string name="cheat_poker">CheatPoker</string>
+    <string name="back_to_homepage">back to homepage</string>
+    <string name="shuffle">shuffle</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="cards_lies_and_strategy">cards, lies and strategy</string>
+    <string name="logout">Logout</string>
+    <string name="popup_text">popup text</string>
+    <string name="create_code">create code</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="rules">"מהלך המשחק:
+                        כל שחקן מקבל קלפים אשר אותם רק הוא זכאי לראות
+                        בתורו יבחר השחקן להכריז צ'יט או לזרוק יד
+                        אם השחקן יכריז צ'יט, יבדק האם אפשר להרכיב את היד שנזרקה והשחקן שמפסיד יקבל קף אחד פחות בתור הבא
+                        אם השחקן יבחר לזרוק יד נוספת הוא יהיה מחוייב לזרוק יד חזקה יותק מהיד הקודמת שנזרקה
+                        השחקן יחשף רק לקלפים שיש ברשותו ולכן יצטרך להמר או להתבסס על ידיים קודמומת שנזרקו(שעלולות להכיל שקרים וקלפים שאין לאף אחד)
+                        *במשחק לא קיים הידיים פלאש או סטרייט
+                        *במשחק אין חשיבות לצורת הקלפים כחלק מעוצמת היד
+                        *יש לכל היותר 4 קלפים מכל מספר ו26 קלפים בכל סיבוב"</string>
+
+</resources>

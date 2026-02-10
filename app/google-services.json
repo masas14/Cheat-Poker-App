@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587673601243",
+    "project_id": "cheatpoker-8c36d",
+    "storage_bucket": "cheatpoker-8c36d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587673601243:android:265717611c4bb8c11138fe",
+        "android_client_info": {
+          "package_name": "com.example.CheatPoker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587673601243-15hhdd0s77rqnesk4t7t5gfgg50v6517.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyfoUYHj5oLvTwDd-ElTr6z-X-1PqAS5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587673601243-15hhdd0s77rqnesk4t7t5gfgg50v6517.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

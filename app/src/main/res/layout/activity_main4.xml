@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A7541"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity4">
+
+
+    <TextView
+        android:id="@+id/textBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/cheat_poker"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textBannerDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/cards_lies_and_strategy"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textGenerateCode"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="224dp"
+        android:gravity="center"
+        android:text="code"
+        android:textSize="32sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/handsList"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:isScrollContainer="true"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/subList1"
+        android:layout_width="70dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="190dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/subList2"
+        android:layout_width="70dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="190dp"
+        android:pointerIcon="arrow"
+        android:scrollbarSize="0dp"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/subList3"
+        android:layout_width="74dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="190dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/subList4"
+        android:layout_width="70dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="91dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/subList5"
+        android:layout_width="70dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="13dp"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/btnShuffle"
+        android:layout_width="190dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9E1414"
+        android:text="Shuffle"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnStartRound"
+        android:layout_width="190dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9E1414"
+        android:text="start Round"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnReady"
+        android:layout_width="190dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9E1414"
+        android:text="ready"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnHand"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9E1414"
+        android:text="Hand"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCheat"
+        android:layout_width="180dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9E1414"
+        android:text="Cheat"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/handsList"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:layout_marginBottom="350dp"-->
+    <!--        android:clickable="true"-->
+    <!--        android:contextClickable="true"-->
+    <!--        android:visibility="visible"-->
+    <!--        tools:itemCount="8" />-->
+
+    <ImageView
+        android:id="@+id/crdSlot10"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot9"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot8"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot7"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+
+    <ImageView
+        android:id="@+id/crdSlot6"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot5"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot4"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot3"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="254dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot2"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="288dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/crdSlot1"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="110dp"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/lastHandCard1"
+        android:layout_width="72dip"
+        android:layout_height="96dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dip"
+        android:layout_marginBottom="360dip"
+        android:visibility="gone"
+        app:srcCompat="@drawable/card_placeholder" />
+
+    <ImageView
+        android:id="@+id/lastHandCard2"
+        android:layout_width="72dip"
+        android:layout_height="96dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dip"
+        android:layout_marginBottom="360dip"
+        android:visibility="gone"
+        app:srcCompat="@drawable/card_placeholder" />
+
+    <ImageView
+        android:id="@+id/lastHandCard3"
+        android:layout_width="72dip"
+        android:layout_height="96dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="158dip"
+        android:layout_marginBottom="360dip"
+        android:visibility="gone"
+        app:srcCompat="@drawable/card_placeholder" />
+
+    <ImageView
+        android:id="@+id/lastHandCard4"
+        android:layout_width="72dip"
+        android:layout_height="96dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="229dip"
+        android:layout_marginBottom="360dip"
+        android:visibility="gone"
+        app:srcCompat="@drawable/card_placeholder" />
+
+    <ImageView
+        android:id="@+id/lastHandCard5"
+        android:layout_width="72dip"
+        android:layout_height="96dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="301dip"
+        android:layout_marginBottom="360dip"
+        android:visibility="gone"
+        app:srcCompat="@drawable/card_placeholder" />
+
+    <Button
+        android:id="@+id/btnEnterHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dip"
+        android:layout_marginBottom="263dp"
+        android:text="enter"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textOutcome"
+        android:layout_width="400dip"
+        android:layout_height="52dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dip"
+        android:layout_marginTop="269dip"
+        android:layout_marginEnd="6dip"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="187dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="118dip"
+        android:layout_marginTop="359dip"
+        android:visibility="gone"
+        android:text="home" />
+
+
+    <Button
+        android:id="@+id/btnLeave"
+        android:layout_width="89dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#9E1414"
+        android:text="leave"
+        android:textSize="10dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
